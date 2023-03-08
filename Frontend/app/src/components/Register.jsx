@@ -32,7 +32,7 @@ function Register({auth,setAuth}) {
             Email:email,
            Password:password
         }
-        const URL = "http://localhost:8080/auth/signup";
+        const URL = "https://silver-donkey-coat.cyclic.app/auth/signup";
       axios.post(URL, user)
         .then(print => {
         if (print.data.Message == "Something went wrong") alert("Something Went wrong, Try again");
